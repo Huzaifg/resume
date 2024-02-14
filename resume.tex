@@ -1,0 +1,264 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks,
+    linkcolor={blue},
+    citecolor={blue},
+    urlcolor={blue}
+}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on January 12th, 2024
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Huzaifa Mustafa Unjhawala} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/Huzaifg}{\underline{https://github.com/Huzaifg}} $  $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/unjhawala/}{\underline{linkedin.com/in/unjhawala/}} $  $
+    \faIcon{envelope}
+    \href{mailto:unjhawala@wisc.edu}
+    {\underline{unjhawala@wisc.edu}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {University of Wisconsin-Madison}{May 2026}
+      {Ph.D. Mechanical Engineering, Minor in Mathematics}
+      {Current GPA: 3.92/4.0}
+    \resumeSubheading
+      {University of Wisconsin-Madison}{Dec 2024}
+      {MS Computer Science (Course-based)}
+      {Current GPA: 3.9/4.0}  
+    \resumeSubheading
+      {University of Wisconsin-Madison}{May 2023}
+      {MS Mechanical Engineering}
+      {Current GPA: 3.94/4.0}
+    \resumeSubheading
+      {National Institute Of Technology - Trichy}{June 2020}
+      {B.Tech with Honors in Mechanical Engineering}{GPA: 8.9/10.0}
+
+    \vspace{-10pt}
+
+    \subsection{Coursework}
+      \textbf{Courses:} High Performance Computing, Scientific Computing, Non-Linear Finite Elements, Mechanics of Continua, Machine Learning, Stochastic Computational Methods, Non-linear Optimization, Kinematics and Dynamics of Machine Systems\\
+      \textbf{Awards:} Baden-Württemberg Stipendium
+
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: C/C++, CUDA, Python (incl. JAX, PyTorch), Matlab, \LaTeX} \\
+     
+    \textbf{Tools}: Git, Linux (Arch, Ubuntu), docker, CMake, Shell (Bash, Zsh), SWIG
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Research Experience}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{Low-Fidelity Vehicle Dynamic Models} $|$ \footnotesize\emph Simulation Based Engineering Lab, UW Madison}{Jan 2022 -- May 2023}
+        \resumeItemListStart
+            \resumeItem{Developed a library of Low-Fidelity Vehicle Models that are 1000x faster that real-time on a CPU}
+            \resumeItem{Parallelized the code using CUDA, achieving simulation of 300,000 vehicles in real-time}
+            \resumeItem{Used a SWIG wrapper to enable the use of the models in Python}
+            \resumeItem{Used Bayesian Optimization to tune the parameters of the model to match real-world data and high-fidelity vehicle models}
+            \resumeItem{Open source code can be found \href{https://github.com/uwsbel/low-fidelity-dynamic-models}{here}}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{GymChrono} $|$ \footnotesize\emph{Simulation Based Engineering Lab, UW Madison}}{May 2023 -- Present}
+        \resumeItemListStart
+            \resumeItem{Co-maintaining the open-source Gymnasium environment for Project Chrono, a physics-based simulation engine for use in Reinforcement Learning applications}
+            \resumeItem{Open source code can be found \href{https://github.com/projectchrono/gym-chrono}{here}}
+            \resumeItem{Co-hosted a training session at \href{https://sbel.wisc.edu/magic-2023/}{MaGIC} whose slides can be found \href{https://uwmadison.box.com/s/l4ahegpgm01lo5wl2tgai05futrtyda8}{here}}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+        {\textbf{Sensor Simulation Validation} $|$ \footnotesize\emph{Simulation Based Engineering Lab, UW Madison}}{Dec 2023 -- Present}
+        \resumeItemListStart
+            \resumeItem{Validating GPS and IMU sensor's in Project Chrono for velocity estimation, using a novel contextual performance difference based approach}
+            \resumeItem{The sensor's are validated through a "judge", which in our case is EKF based velocity estimator}
+            \resumeItem{The velocity estimated by the EKF is compared to the ground truth velocity, in both simulation and real-world scenarios. These errors are then compared statistically to determine the performance of the sensors in simulation.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Fast Terramechanics Simulation} $|$ \footnotesize\emph{Simulation Based Engineering Lab, UW Madison}}{Feb 2024 -- Present}
+        \resumeItemListStart
+            \resumeItem{Exploring the use of Graph-Neural Network based models for fast Terra Mechanics simulations with the main goal to enable real-time simulation of large-scale terrains for development of autonomous construction algorithms}
+            \resumeItem{Early results can be found \href{https://uwmadison.box.com/s/pef8eecph7l4agdf3eyslu618wc8aivz}{here}}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Calibration of Terramechanics Models}}{Jan 2023 -- May 2023}
+        \resumeItemListStart
+            \resumeItem{Contributed to the Bayesian Calibration of the soil contact model (SCM) with the use of data generated from a virtual bevameter test using high-fidelity terramechanics simulations}
+            \resumeItem{The resulting calibrated model was fast and accurate enough to be used in real-time simulations of full rover simulations on granular terrains}
+
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Undergraduate Experience in Simulation}}{May 2018 -- May 2020}
+        \resumeItemListStart
+            \resumeItem{Was awarded the Baden-Württemberg Stipendium for a 3-month research internship at the Karlsruhe Institute of Technology, Germany, where I worked on multi-body simulation models for axial thrust bearings in MSC Adams}
+            \resumeItem{Build a transient fluid flow simulation model that was used to optimize the pressure drop of a Magneto-Rheological Damper in ANSYS CFX and AIM}
+            \resumeItem{As part of the SAE Baja team, I was responsible for the design and simulation of the wheel assembly, achieving 20\% weight reduction while maintaining the same strength}
+        \resumeItemListEnd
+
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Relevant Work Experience}
+  \resumeSubHeadingListStart
+
+          \resumeProjectHeading
+          {\textbf{National Renewable Energy Laboratory} $|$ \footnotesize\emph{Graduate Engineering Intern}\vspace{8pt}}{Jul. 2023 -- Sep. 2023}
+        \resumeItemListStart
+          \resumeItem{Contributed to HydroChrono - a C++ library for enabling Wave Energy Converter (WEC) simulations with Project Chrono}
+          \resumeItem{Refactored code and setup testing infrastructure for the library}
+          \resumeItem{Explored the use of multi-fidelity models for WEC simulations by enabling seamless transition from potential flow solvers used in HydroChrono to high-fidelity SPH solvers used in Project Chrono}
+          \resumeItem{Open source code can be found \href{https://github.com/NREL/HydroChrono}{here}}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd 
+
+% -------------------- PUBLICATIONS --------------------
+\section{Publications}
+  \resumeSubHeadingListStart
+
+          \resumeProjectHeading
+          {\textbf{Journal Publications}}{}
+        \resumeItemListStart
+            \resumeItem{Hu, W., Li, P., \textbf{Unjhawala, H.M.}, Serban, R. \& Negrut, D. (2023) \textbf{Calibration of an expeditious terramechanics model using a higher-fidelity model, Bayesian inference, and a virtual bevameter test.} Journal of Field Robotics, 1–20. \url{https://doi.org/10.1002/rob.22276}}
+            \resumeItem{\textbf{Unjhawala, H. M.}, Zhang, R., Hu, W., Wu, J., Serban, R., and Negrut, D. (April 8, 2023). \textbf{Using a Bayesian-Inference Approach to Calibrating Models for Simulation in Robotics.} ASME. J. Comput. Nonlinear Dynam. June 2023; 18(6): 061004. \url{https://doi.org/10.1115/1.4062199}}
+        \resumeItemListEnd
+
+        \resumeProjectHeading{\textbf{Conference Publications}}{}
+        \resumeItemListStart
+        \resumeItem{Zhou, Z., \textbf{Unjhawala, H.}, Kamaraj, A., Kissel, A., Lee, J., Serban, R., Negrut, D., ''A Chrono-Based Framework for Large-Scale Traffic Simulation with Human-In-The-Loop.'' Proceedings of the Multibody 2023 11th ECCOMAS Thematic Conference on Multibody Dynamics, Lisboa, Portugal. July 24-28, 2023. Preprint \url{https://doi.org/10.13140/RG.2.2.23133.59361}}
+        \resumeItemListEnd
+
+        \resumeProjectHeading{\textbf{Under Review}}{}
+        \resumeItemListStart
+        \resumeItem{\textbf{Unjhawala, H.}, Hansen, T., Zhang, H., Caldraru, S., Chatterjee, S., Bakke, L., Wu, J., Serban, R., Negrut, D., \textbf{An Expeditious and Expressive Vehicle Dynamics Model for Applications in Controls and Reinforcement Learning}, IEEE Access, Preprint \url{https://uwmadison.box.com/s/ee3cnv3ywghjhraazh52xudonyorlg77}}
+        \resumeItem{\textbf{Unjhawala, H.}, Mahajan, I., Serban, R., Negrut, D., \textbf{A Graph-Neural Network Based Approach for Fast Terramechanics Simulation}, Journal of Open Source Software, Preprint \url{https://github.com/uwsbel/low-fidelity-dynamic-models/blob/12-complete-paper-for-joss/paper/paper.md}}
+        \resumeItem{Zhang, H., Caldararu, S., Ashokkumar, S., Mahajan, I., Young, A., Ruiz, A., \textbf{Unjhawala, H.}, Bakke, L., Negrut, D., \textbf{Zero-Shot Policy Transferability for the Control of a Scale Autonomous Vehicle}, arXiv, Preprint \url{https://arxiv.org/abs/2309.09870}}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
