@@ -174,10 +174,10 @@
         \resumeProjectHeading
         {\textbf{Low-Fidelity Vehicle Dynamic Models} $|$ \footnotesize\emph Simulation Based Engineering Lab, UW Madison}{Jan 2022 -- May 2023}
         \resumeItemListStart
-            \resumeItem{Developed a library of Low-Fidelity Vehicle Models that are 1000x faster that real-time on a CPU}
+            \resumeItem{Developed a library of Low-Fidelity Vehicle Models that are 1000x faster than real-time on a CPU}
             \resumeItem{Parallelized the code using CUDA, achieving simulation of 300,000 vehicles in real-time}
-            \resumeItem{Used a SWIG wrapper to enable the use of the models in Python}
-            \resumeItem{Used Bayesian Optimization to tune the parameters of the model to match real-world data and high-fidelity vehicle models}
+            \resumeItem{Used a SWIG wrapper to provide a Python API to the model}
+            \resumeItem{Used Bayesian Optimization to tune the parameters of the model to match real-world data and data from high-fidelity vehicle models}
             \resumeItem{Open source code can be found \href{https://github.com/uwsbel/low-fidelity-dynamic-models}{here}}
           \resumeItemListEnd
     
@@ -185,14 +185,15 @@
         {\textbf{GymChrono} $|$ \footnotesize\emph{Simulation Based Engineering Lab, UW Madison}}{May 2023 -- Present}
         \resumeItemListStart
             \resumeItem{Co-maintaining the open-source Gymnasium environment for Project Chrono, a physics-based simulation engine for use in Reinforcement Learning applications}
-            \resumeItem{Open source code can be found \href{https://github.com/projectchrono/gym-chrono}{here}}
             \resumeItem{Co-hosted a training session at \href{https://sbel.wisc.edu/magic-2023/}{MaGIC} whose slides can be found \href{https://uwmadison.box.com/s/l4ahegpgm01lo5wl2tgai05futrtyda8}{here}}
+            \resumeItem{Open source code can be found \href{https://github.com/projectchrono/gym-chrono}{here}}
+
           \resumeItemListEnd
           
       \resumeProjectHeading
         {\textbf{Sensor Simulation Validation} $|$ \footnotesize\emph{Simulation Based Engineering Lab, UW Madison}}{Dec 2023 -- Present}
         \resumeItemListStart
-            \resumeItem{Validating GPS and IMU sensor's in Project Chrono for velocity estimation, using a novel contextual performance difference based approach}
+            \resumeItem{Validating GPS and IMU sensor's in Project Chrono for velocity estimation using a novel contextual performance difference based approach}
             \resumeItem{The sensor's are validated through a "judge", which in our case is EKF based velocity estimator}
             \resumeItem{The velocity estimated by the EKF is compared to the ground truth velocity, in both simulation and real-world scenarios. These errors are then compared statistically to determine the performance of the sensors in simulation.}
         \resumeItemListEnd
@@ -207,7 +208,7 @@
         \resumeProjectHeading
         {\textbf{Calibration of Terramechanics Models}}{Jan 2023 -- May 2023}
         \resumeItemListStart
-            \resumeItem{Contributed to the Bayesian Calibration of the soil contact model (SCM) with the use of data generated from a virtual bevameter test using high-fidelity terramechanics simulations}
+            \resumeItem{Contributed to the Bayesian Calibration of the Soil Contact Model (SCM) with the use of data generated with a virtual bevameter test for high-fidelity terramechanics simulations}
             \resumeItem{The resulting calibrated model was fast and accurate enough to be used in real-time simulations of full rover simulations on granular terrains}
 
         \resumeItemListEnd
@@ -215,8 +216,8 @@
         \resumeProjectHeading
         {\textbf{Undergraduate Experience in Simulation}}{May 2018 -- May 2020}
         \resumeItemListStart
-            \resumeItem{Was awarded the Baden-Württemberg Stipendium for a 3-month research internship at the Karlsruhe Institute of Technology, Germany, where I worked on multi-body simulation models for axial thrust bearings in MSC Adams}
-            \resumeItem{Build a transient fluid flow simulation model that was used to optimize the pressure drop of a Magneto-Rheological Damper in ANSYS CFX and AIM}
+            \resumeItem{Awarded the Baden-Württemberg Stipendium for a 3-month research internship at the Karlsruhe Institute of Technology, Germany, where I worked on multi-body simulation models for axial thrust bearings in MSC Adams}
+            \resumeItem{Built a transient fluid flow simulation model that was used to optimize the pressure drop of a Magneto-Rheological Damper in ANSYS CFX and AIM}
             \resumeItem{As part of the SAE Baja team, I was responsible for the design and simulation of the wheel assembly, achieving 20\% weight reduction while maintaining the same strength}
         \resumeItemListEnd
 
