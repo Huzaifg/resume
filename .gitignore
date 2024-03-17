@@ -30,7 +30,7 @@
 *-blx.bib
 *.run.xml
 *.xdv
-*.pdf
+
 # TeX auxiliary files
 *.auxlock
 
